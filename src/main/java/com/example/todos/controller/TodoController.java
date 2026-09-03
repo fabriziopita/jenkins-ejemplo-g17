@@ -54,4 +54,9 @@ public class TodoController {
         todoService.delete(id);
         return ResponseEntity.noContent().build();
     }
+
+    @GetMapping("/hola")
+    public String holaController() {
+        return "Hola Mundo";
+    }
 }
